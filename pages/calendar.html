@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Календар змагань з дзюдо | JUDO SPIRIT</title>
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/pages/calendar/calendar.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Playfair+Display:wght@700&display=swap">
+</head>
+<body>
+    <div class="page-container">
+        <!-- Бокова навігація -->
+        <nav class="side-nav">
+            <div class="logo">
+                <h1>JUDO<span>SPIRIT</span></h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="../index.html">Головна</a></li>
+                <li><a href="calendar.html" class="active">Календар</a></li>
+                <li><a href="techniques.html">Техніки</a></li>
+                <li><a href="athletes.html">Атлети</a></li>
+                <li><a href="gallery.html">Галерея</a></li>
+                <li><a href="about.html">Про блог</a></li>
+            </ul>
+            <div class="social-links">
+                <a href="#" class="social-icon"><img src="https://upload.wikimedia.org/wikipedia/commons/b/b8/2021_Facebook_icon.svg" alt="Facebook"></a>
+                <a href="#" class="social-icon"><img src="https://upload.wikimedia.org/wikipedia/commons/8/82/Telegram_logo.svg" alt="Telegram"></a>
+                <a href="#" class="social-icon"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/2048px-Instagram_logo_2016.svg.png" alt="Instagram"></a>
+            </div>
+        </nav>
+
+        <!-- Основний контент -->
+        <main class="main-content">
+
+            <section class="page-hero">
+                <div class="page-hero-content">
+                    <h1>Календар змагань з дзюдо на 2025 рік</h1>
+                    <p>Офіційний календар спортивних заходів з дзюдо в Україні та світі</p>
+                </div>
+            </section>
+
+            <section class="calendar-container">
+                <!-- Фільтри подій -->
+                
+                <!-- Прихований селектор місяців для навігації -->
+                <div class="month-selector" style="display: none;">
+                    <button class="month-btn" data-month="01">Січень</button>
+                    <button class="month-btn" data-month="02">Лютий</button>
+                    <button class="month-btn" data-month="03">Березень</button>
+                    <button class="month-btn" data-month="04">Квітень</button>
+                    <button class="month-btn" data-month="05">Травень</button>
+                    <button class="month-btn" data-month="06">Червень</button>
+                    <button class="month-btn" data-month="07">Липень</button>
+                    <button class="month-btn" data-month="08">Серпень</button>
+                    <button class="month-btn" data-month="09">Вересень</button>
+                    <button class="month-btn" data-month="10">Жовтень</button>
+                    <button class="month-btn" data-month="11">Листопад</button>
+                    <button class="month-btn" data-month="12">Грудень</button>
+                </div>
+                
+                <!-- Календар буде динамічно заповнюватися з JavaScript -->
+                <div class="calendar-loading">
+                    <div class="spinner"></div>
+                    <p>Завантаження календаря...</p>
+                </div>
+            </section>
+
+            <section class="calendar-download">
+                <h3>Завантажити повний календар</h3>
+                <p>Ви можете завантажити повний календар змагань з дзюдо на 2025 рік у форматі PDF</p>
+                <a href="../assets/documents/calendar-2025.pdf" class="btn-primary download-pdf-btn">Завантажити PDF</a>
+            </section>
+
+            <section class="newsletter">
+                <div class="newsletter-content">
+                    <h3>Підпишіться на новини</h3>
+                    <p>Отримуйте анонси змагань, результати та ексклюзивні матеріали прямо на вашу пошту</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Ваш email" required>
+                        <button type="submit" class="btn-primary">Підписатися</button>
+                    </form>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <h2>JUDO<span>SPIRIT</span></h2>
+                <p>Ваш провідник у світі дзюдо</p>
+            </div>
+            <div class="footer-links">
+                <div class="footer-column">
+                    <h4>Розділи</h4>
+                    <ul>
+                        <li><a href="../index.html">Головна</a></li>
+                        <li><a href="calendar.html">Календар</a></li>
+                        <li><a href="techniques.html">Техніки</a></li>
+                        <li><a href="athletes.html">Атлети</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Інформація</h4>
+                    <ul>
+                        <li><a href="about.html">Про блог</a></li>
+                        <li><a href="contact.html">Контакти</a></li>
+                        <li><a href="privacy.html">Політика конфіденційності</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Контакти</h4>
+                    <ul class="contact-info">
+                        <li><a href="mailto:info@judospirit.ua">info@judospirit.ua</a></li>
+                        <li><a href="tel:+380501234567">+38 (050) 123-45-67</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2023 JUDOSPIRIT. Всі права захищені.</p>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+    <script type="module" src="../js/pages/calendar/calendar.js"></script>
+</body>
+</html> 
