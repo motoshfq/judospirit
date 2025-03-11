@@ -1,1 +1,664 @@
+/**
+ * Стили для главной страницы
+ */
 
+/* Секция героя */
+.hero {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 1rem;
+    background-color: white;
+    border-radius: var(--card-border-radius);
+    overflow: hidden;
+    box-shadow: var(--box-shadow);
+}
+
+.hero-content {
+    flex: 1;
+    padding: 3rem;
+    min-width: 300px;
+}
+
+.hero-content h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    line-height: 1.3;
+    color: var(--primary-color);
+}
+
+.hero-content p {
+    color: #34495e;
+    margin-bottom: 2rem;
+}
+
+.hero-image {
+    flex: 1;
+    min-width: 300px;
+    height: 400px;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.hero:hover .hero-image img {
+    transform: scale(1.05);
+}
+
+/* Секция популярных статей */
+.featured-posts {
+    margin-bottom: 4rem;
+}
+
+.posts-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.post-card {
+    background-color: white;
+    border-radius: var(--card-border-radius);
+    overflow: hidden;
+    box-shadow: var(--box-shadow);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.post-card:hover {
+    transform: translateY(-10px);
+    box-shadow: var(--hover-shadow);
+}
+
+.post-card.featured {
+    grid-column: span 2;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.post-card.featured .post-image {
+    flex: 1;
+    min-width: 300px;
+}
+
+.post-card.featured .post-content {
+    flex: 1;
+    min-width: 300px;
+}
+
+.post-image {
+    position: relative;
+    height: 200px;
+    overflow: hidden;
+}
+
+.post-card.featured .post-image {
+    height: 100%;
+}
+
+.post-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.post-card:hover .post-image img {
+    transform: scale(1.05);
+}
+
+.category {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    background-color: var(--category-competitions);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    z-index: 1;
+}
+
+.category:nth-of-type(2) {
+    background-color: var(--category-techniques);
+}
+
+.category:nth-of-type(3) {
+    background-color: var(--category-athletes);
+}
+
+.post-content {
+    padding: 1.5rem;
+}
+
+.post-content h4 {
+    font-size: 1.3rem;
+    margin-bottom: 0.8rem;
+    line-height: 1.4;
+}
+
+.post-content p {
+    color: #34495e;
+    margin-bottom: 1rem;
+}
+
+.read-more {
+    display: inline-block;
+    font-weight: 600;
+    color: var(--secondary-color);
+    margin-bottom: 1rem;
+}
+
+.read-more:hover {
+    color: #c0392b;
+}
+
+.post-meta {
+    display: flex;
+    justify-content: space-between;
+    color: #34495e;
+    font-size: 0.9rem;
+}
+
+/* Секция ближайших соревнований */
+.upcoming-events {
+    margin-bottom: 2rem;
+    text-align: center;
+    background-color: #f8f9fa;
+    padding: 2rem;
+    border-radius: var(--card-border-radius);
+    box-shadow: var(--box-shadow);
+}
+
+.upcoming-events .section-title {
+    margin-top: 0.5rem;
+    color: var(--primary-color);
+}
+
+/* Индикатор загрузки для событий */
+.events-loading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    text-align: center;
+}
+
+.loading-spinner {
+    width: 40px;
+    height: 40px;
+    border: 4px solid rgba(231, 76, 60, 0.2);
+    border-radius: 50%;
+    border-top-color: var(--secondary-color);
+    animation: spin 1s linear infinite;
+    margin-bottom: 1rem;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.no-events {
+    text-align: center;
+    padding: 2rem;
+    color: #34495e;
+    font-style: italic;
+}
+
+.events-slider {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding: 1.5rem 0;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.event-card {
+    width: 350px;
+    background-color: white;
+    border-radius: var(--card-border-radius);
+    overflow: hidden;
+    box-shadow: var(--box-shadow);
+    display: flex;
+    transition: all 0.3s ease;
+    margin-bottom: 1rem;
+}
+
+.event-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--hover-shadow);
+}
+
+.event-date {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    background-color: var(--secondary-color);
+    color: white;
+    padding: 1.5rem 1rem;
+}
+
+/* Стили для разных типов соревнований */
+.event-date.event-international {
+    background-color: var(--accent-color); /* Синий для международных */
+}
+
+.event-date.event-national {
+    background-color: var(--secondary-color); /* Красный для национальных */
+}
+
+.event-date .day {
+    font-size: 2.2rem;
+    font-weight: 700;
+    line-height: 1;
+}
+
+.event-date .month {
+    font-size: 1rem;
+    margin-top: 0.5rem;
+    font-weight: 500;
+}
+
+.event-details {
+    padding: 1.8rem;
+    flex: 1;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+}
+
+.event-details h4 {
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+    line-height: 1.3;
+}
+
+.location {
+    color: #34495e;
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+    margin-top: 0.8rem;
+}
+
+.location::before {
+    content: '📍';
+    margin-right: 8px;
+    font-size: 1.1rem;
+}
+
+.event-details .btn-outline {
+    margin-top: auto;
+    align-self: flex-start;
+    margin-top: 1.5rem;
+    font-size: 0.95rem;
+    padding: 0.6rem 1.2rem;
+    font-weight: 600;
+}
+
+/* Секция философии дзюдо */
+.philosophy {
+    padding-top: 2rem;
+    margin-bottom: 4rem;
+    background-color: #f8f9fa;
+    border-radius: var(--card-border-radius);
+    overflow: hidden;
+    box-shadow: var(--box-shadow);
+    position: relative;
+}
+
+.philosophy::before {
+    content: '';
+    position: absolute;
+    top: -3rem;
+    left: 10%;
+    right: 10%;
+    height: 2px;
+    background-color: #e0e0e0;
+}
+
+.philosophy .section-title {
+    margin-top: 0;
+}
+
+.philosophy-content {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.philosophy-text {
+    flex: 1.5;
+    padding: 3rem;
+    min-width: 300px;
+}
+
+.philosophy-image {
+    flex: 1;
+    min-width: 300px;
+    position: relative;
+    overflow: hidden;
+}
+
+.philosophy-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.philosophy:hover .philosophy-image img {
+    transform: scale(1.05);
+}
+
+.image-caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 0.8rem;
+    font-size: 0.9rem;
+    text-align: center;
+}
+
+.image-caption p {
+    margin: 0;
+}
+
+.quote {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+    line-height: 1.3;
+}
+
+.author {
+    font-style: italic;
+    color: #34495e;
+    margin-bottom: 2rem;
+}
+
+.quote-small {
+    font-family: 'Noto Serif', 'Times New Roman', serif;
+    font-size: 1.2rem;
+    font-weight: 500;
+    font-style: italic;
+    color: var(--primary-color);
+    margin-top: 2rem;
+    margin-bottom: 0.5rem;
+    line-height: 1.5;
+    padding: 1rem 1.5rem;
+    border-left: 4px solid var(--secondary-color);
+    background-color: rgba(231, 76, 60, 0.05);
+}
+
+.author-small {
+    font-family: 'Noto Serif', 'Times New Roman', serif;
+    font-style: italic;
+    color: #34495e;
+    margin-bottom: 1rem;
+    text-align: right;
+    padding-right: 1.5rem;
+}
+
+.description {
+    margin-bottom: 2rem;
+    line-height: 1.8;
+    color: #34495e;
+}
+
+.philosophy-pillars {
+    margin-bottom: 2rem;
+}
+
+.philosophy-pillars h4 {
+    color: var(--primary-color);
+    margin-bottom: 1.5rem;
+    font-size: 1.4rem;
+}
+
+.pillars-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: space-between;
+}
+
+.pillar {
+    flex: 1;
+    min-width: 200px;
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: var(--border-radius);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.pillar:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.pillar-icon {
+    width: 60px;
+    height: 60px;
+    margin: 0 auto 1rem;
+    background-color: var(--light-color);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pillar-icon img {
+    width: 30px;
+    height: 30px;
+}
+
+.pillar h5 {
+    color: var(--secondary-color);
+    margin-bottom: 0.8rem;
+    font-size: 1.1rem;
+}
+
+.pillar p {
+    color: #34495e;
+    font-size: 0.9rem;
+    line-height: 1.6;
+}
+
+.principles {
+    margin-bottom: 2rem;
+}
+
+.principles h4 {
+    color: var(--primary-color);
+    margin-bottom: 1.5rem;
+    font-size: 1.4rem;
+}
+
+.principle {
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: var(--border-radius);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-bottom: 1rem;
+}
+
+.principle:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.principle h5 {
+    color: var(--secondary-color);
+    margin-bottom: 0.8rem;
+    font-size: 1.1rem;
+}
+
+.principle p {
+    color: #34495e;
+    font-size: 0.9rem;
+    line-height: 1.6;
+}
+
+.judo-code {
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: var(--border-radius);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    margin-bottom: 2rem;
+}
+
+.judo-code h4 {
+    color: var(--primary-color);
+    margin-bottom: 1.5rem;
+    font-size: 1.4rem;
+}
+
+.judo-code ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 1rem;
+}
+
+.judo-code li {
+    color: #34495e;
+    font-size: 0.9rem;
+    line-height: 1.6;
+    padding: 0.5rem 0;
+}
+
+.judo-code strong {
+    color: var(--secondary-color);
+}
+
+/* Медиа-запросы */
+@media (max-width: 1200px) {
+    .post-card.featured {
+        grid-column: span 1;
+        display: block;
+    }
+    
+    .post-card.featured .post-image {
+        height: 200px;
+    }
+}
+
+@media (max-width: 992px) {
+    .hero {
+        flex-direction: column;
+    }
+    
+    .hero-content {
+        padding: 2rem;
+    }
+    
+    .hero-content h2 {
+        font-size: 2rem;
+    }
+    
+    .posts-grid {
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    }
+    
+    .philosophy-text {
+        padding: 2rem;
+    }
+    
+    .quote {
+        font-size: 1.5rem;
+    }
+    
+    .pillars-container {
+        flex-direction: column;
+    }
+    
+    .judo-code ul {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    }
+}
+
+@media (max-width: 768px) {
+    .philosophy-content {
+        flex-direction: column;
+    }
+    
+    .philosophy-image {
+        margin-top: 2rem;
+    }
+    
+    .newsletter-form {
+        flex-direction: column;
+    }
+    
+    .newsletter-form input {
+        margin-right: 0;
+        margin-bottom: 1rem;
+    }
+    
+    .newsletter-form button {
+        width: 100%;
+    }
+    
+    .event-card {
+        width: 100%;
+        max-width: 450px;
+    }
+}
+
+@media (max-width: 576px) {
+    .posts-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .event-card {
+        flex-direction: column;
+        width: 100%;
+        max-width: 350px;
+    }
+    
+    .event-date {
+        width: 100%;
+        padding: 1rem;
+        flex-direction: row;
+        justify-content: center;
+    }
+    
+    .event-date .day {
+        font-size: 1.8rem;
+        margin-right: 0.5rem;
+    }
+    
+    .event-date .month {
+        font-size: 1rem;
+        margin-top: 0;
+    }
+    
+    .hero-content h2 {
+        font-size: 2rem;
+    }
+}
+
+.upcoming-events .btn-secondary {
+    margin-top: 2rem;
+    display: inline-block;
+} 
