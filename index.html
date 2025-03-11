@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JUDO SPIRIT | Блог про дзюдо та змагання</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/pages/main/main.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Playfair+Display:wght@700&family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,500&display=swap">
+</head>
+<body>
+    <div class="page-container">
+        <!-- Бокова навігація -->
+        <nav class="side-nav">
+            <div class="logo">
+                <h1>JUDO<span>SPIRIT</span></h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#" class="active">Головна</a></li>
+                <li><a href="pages/calendar.html">Календар</a></li>
+                <li><a href="pages/techniques.html">Техніки</a></li>
+                <li><a href="pages/athletes.html">Атлети</a></li>
+                <li><a href="pages/gallery.html">Галерея</a></li>
+                <li><a href="pages/about.html">Про блог</a></li>
+            </ul>
+            <div class="social-links">
+                <a href="#" class="social-icon"><img src="https://upload.wikimedia.org/wikipedia/commons/b/b8/2021_Facebook_icon.svg" alt="Facebook"></a>
+                <a href="#" class="social-icon"><img src="https://upload.wikimedia.org/wikipedia/commons/8/82/Telegram_logo.svg" alt="Telegram"></a>
+                <a href="#" class="social-icon"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/2048px-Instagram_logo_2016.svg.png" alt="Instagram"></a>
+            </div>
+        </nav>
+
+        <!-- Основний контент -->
+        <main class="main-content">
+            <section class="hero">
+                <div class="hero-content">
+                    <h2>Дзюдо — шлях до гармонії тіла і духу</h2>
+                    <p>Відкрийте для себе світ дзюдо — бойового мистецтва, що поєднує фізичну силу, технічну майстерність та філософію взаємодопомоги.</p>
+                    <a href="#featured" class="btn-primary">Дізнатися більше</a>
+                </div>
+                <div class="hero-image">
+                    <img src="assets/images/hero-judo.jpg" alt="Дзюдо в дії">
+                </div>
+            </section>
+
+            <section id="featured" class="featured-posts">
+                <h3 class="section-title">Популярні статті</h3>
+                <div class="posts-grid">
+                    <article class="post-card featured">
+                        <div class="post-image">
+                            <img src="assets/images/competition.jpg" alt="Міжнародний турнір">
+                            <span class="category">Змагання</span>
+                        </div>
+                        <div class="post-content">
+                            <h4>Українські дзюдоїсти на міжнародній арені</h4>
+                            <p>Аналіз виступів наших спортсменів на останніх міжнародних турнірах та перспективи на майбутнє...</p>
+                            <a href="#" class="read-more">Читати повністю</a>
+                            <div class="post-meta">
+                                <span class="date">15 травня 2023</span>
+                                <span class="comments">32 коментарі</span>
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <article class="post-card">
+                        <div class="post-image">
+                            <img src="assets/images/technique.jpg" alt="Техніка дзюдо">
+                            <span class="category">Техніки</span>
+                        </div>
+                        <div class="post-content">
+                            <h4>Основи техніки кидків через спину</h4>
+                            <p>Детальний розбір механіки кидків через спину (Seoi-nage) та їх варіацій для різних рівнів підготовки...</p>
+                            <a href="#" class="read-more">Читати повністю</a>
+                            <div class="post-meta">
+                                <span class="date">8 травня 2023</span>
+                                <span class="comments">24 коментарі</span>
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <article class="post-card">
+                        <div class="post-image">
+                            <img src="assets/images/athlete.jpg" alt="Відомий дзюдоїст">
+                            <span class="category">Атлети</span>
+                        </div>
+                        <div class="post-content">
+                            <h4>Шлях чемпіона: історія Георгія Зантарая</h4>
+                            <p>Від перших тренувань до золотих медалей — історія становлення одного з найуспішніших українських дзюдоїстів...</p>
+                            <a href="#" class="read-more">Читати повністю</a>
+                            <div class="post-meta">
+                                <span class="date">1 травня 2023</span>
+                                <span class="comments">41 коментар</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                <a href="#" class="btn-secondary">Всі статті</a>
+            </section>
+
+            <section class="upcoming-events">
+                <h3 class="section-title">Найближчі змагання</h3>
+                <div class="events-loading" style="display: none;">
+                    <div class="loading-spinner"></div>
+                    <p>Завантаження змагань...</p>
+                </div>
+                <div class="events-slider">
+                    <!-- Тут будуть динамічно завантажені найближчі змагання -->
+                </div>
+                <a href="pages/calendar.html" class="btn-secondary">Всі змагання</a>
+            </section>
+
+            <section class="philosophy">
+                <h3 class="section-title">Філософія дзюдо</h3>
+                <div class="philosophy-content">
+                    <div class="philosophy-text">
+                        <p class="quote">"Шлях м'якості та гнучкості — це шлях до перемоги"</p>
+                        <p class="author">— Дзіґоро Кано, засновник дзюдо</p>
+                        <p class="description">
+                            Дзюдо (柔道) — це не просто бойове мистецтво чи спорт, а цілісна філософська система, 
+                            створена в 1882 році японським педагогом Дзіґоро Кано. Назва "дзюдо" складається з двох ієрогліфів: 
+                            "дзю" (柔) — м'якість, гнучкість, податливість, та "до" (道) — шлях, принцип.
+                        </p>
+                        
+                        <div class="philosophy-pillars">
+                            <h4>Три стовпи дзюдо:</h4>
+                            <div class="pillars-container">
+                                <div class="pillar">
+                                    <div class="pillar-icon">
+                                        <img src="assets/images/physical.svg" alt="Фізичний розвиток">
+                                    </div>
+                                    <h5>Фізичний розвиток</h5>
+                                    <p>Тренування тіла, розвиток сили, гнучкості, координації та витривалості</p>
+                                </div>
+                                <div class="pillar">
+                                    <div class="pillar-icon">
+                                        <img src="assets/images/mental.svg" alt="Ментальний розвиток">
+                                    </div>
+                                    <h5>Ментальний розвиток</h5>
+                                    <p>Виховання волі, концентрації, дисципліни та стратегічного мислення</p>
+                                </div>
+                                <div class="pillar">
+                                    <div class="pillar-icon">
+                                        <img src="assets/images/moral.svg" alt="Моральний розвиток">
+                                    </div>
+                                    <h5>Моральний розвиток</h5>
+                                    <p>Формування характеру, поваги, чесності та відповідальності</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="principles">
+                            <h4>Ключові принципи дзюдо:</h4>
+                            <div class="principle">
+                                <h5>Дзю-но-рі (柔の理)</h5>
+                                <p>Принцип гнучкості та податливості — перемога через поступливість. Не протидіяти силі супротивника, а використовувати її проти нього самого.</p>
+                            </div>
+                            <div class="principle">
+                                <h5>Сейриоку Дзенйо (精力善用)</h5>
+                                <p>Максимальна ефективність при мінімумі зусиль. Оптимальне використання фізичної та ментальної енергії для досягнення мети.</p>
+                            </div>
+                            <div class="principle">
+                                <h5>Дзіта Кьоей (自他共栄)</h5>
+                                <p>Взаємодопомога та взаємне процвітання. Особистий розвиток невіддільний від допомоги іншим у їхньому розвитку.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="judo-code">
+                            <h4>Моральний кодекс дзюдоїста:</h4>
+                            <ul>
+                                <li><strong>Ввічливість</strong> — повага до інших</li>
+                                <li><strong>Сміливість</strong> — готовність зустріти виклики</li>
+                                <li><strong>Щирість</strong> — чесність у словах і діях</li>
+                                <li><strong>Честь</strong> — вірність своїм принципам</li>
+                                <li><strong>Скромність</strong> — відсутність гордині</li>
+                                <li><strong>Повага</strong> — визнання цінності інших</li>
+                                <li><strong>Самоконтроль</strong> — володіння своїми емоціями</li>
+                                <li><strong>Дружба</strong> — найвища цінність людських стосунків</li>
+                            </ul>
+                        </div>
+                        
+                        <p class="quote-small">
+                            "Дзюдо — це шлях до найбільш ефективного використання фізичної та духовної сили. 
+                            Тренуючи атаки та захисти, ви загартовуєте тіло та дух і опановуєте суть самого дзюдо; 
+                            і таким чином ви вдосконалюєте себе та стаєте корисним для світу."
+                        </p>
+                        <p class="author-small">— Дзіґоро Кано</p>
+                    </div>
+                    <div class="philosophy-image">
+                        <img src="assets/images/judo-philosophy.jpg" alt="Філософія дзюдо">
+                        <div class="image-caption">
+                            <p>Дзіґоро Кано (1860-1938) — засновник дзюдо, педагог та реформатор японської освіти</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <h2>JUDO<span>SPIRIT</span></h2>
+                <p>Ваш провідник у світі дзюдо</p>
+            </div>
+            <div class="footer-links">
+                <div class="footer-column">
+                    <h4>Розділи</h4>
+                    <ul>
+                        <li><a href="#">Головна</a></li>
+                        <li><a href="pages/calendar.html">Календар</a></li>
+                        <li><a href="pages/techniques.html">Техніки</a></li>
+                        <li><a href="pages/athletes.html">Атлети</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Інформація</h4>
+                    <ul>
+                        <li><a href="pages/about.html">Про блог</a></li>
+                        <li><a href="pages/contact.html">Контакти</a></li>
+                        <li><a href="pages/privacy.html">Політика конфіденційності</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Контакти</h4>
+                    <ul class="contact-info">
+                        <li><a href="mailto:info@judospirit.ua">info@judospirit.ua</a></li>
+                        <li><a href="tel:+380501234567">+38 (050) 123-45-67</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2023 JUDOSPIRIT. Всі права захищені.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js" type="module"></script>
+    <script src="js/upcoming-events.js" type="module"></script>
+</body>
+</html> 
