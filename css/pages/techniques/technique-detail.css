@@ -1,0 +1,868 @@
+/**
+ * Стили для страницы детального просмотра техники дзюдо
+ */
+
+/* Хлебные крошки */
+.breadcrumbs {
+    margin-bottom: 2rem;
+    font-size: 0.9rem;
+    color: #777;
+}
+
+.breadcrumbs a {
+    color: #777;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.breadcrumbs a:hover {
+    color: var(--secondary-color);
+}
+
+.breadcrumbs span {
+    color: var(--primary-color);
+    font-weight: 500;
+}
+
+/* Заголовок техники */
+.technique-header {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 3rem;
+    background-color: white;
+    border-radius: var(--card-border-radius);
+    overflow: hidden;
+    box-shadow: var(--box-shadow);
+}
+
+.technique-title {
+    flex: 1;
+    min-width: 300px;
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    border-left: 4px solid #e74c3c;
+    background: linear-gradient(to right, rgba(245, 245, 245, 0.8), rgba(255, 255, 255, 0.4));
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+}
+
+.technique-title:hover {
+    border-left-width: 6px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.technique-category {
+    display: inline-block;
+    background-color: #e74c3c;
+    color: white;
+    font-size: 0.85rem;
+    font-weight: 600;
+    padding: 0.3rem 0.8rem;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    box-shadow: 0 2px 5px rgba(231, 76, 60, 0.3);
+    transition: all 0.3s ease;
+}
+
+.technique-category:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(231, 76, 60, 0.4);
+}
+
+.technique-title h1 {
+    margin: 0 0 0.5rem 0;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #333;
+    line-height: 1.2;
+    font-family: 'Playfair Display', serif;
+    position: relative;
+    display: inline-block;
+}
+
+.technique-title h1::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 60px;
+    height: 3px;
+    background-color: #e74c3c;
+    transition: width 0.3s ease;
+}
+
+.technique-title:hover h1::after {
+    width: 100px;
+}
+
+.technique-subtitle {
+    margin: 0.5rem 0 0 0;
+    font-size: 1.1rem;
+    color: #666;
+    font-weight: 400;
+    font-style: italic;
+    font-family: 'Noto Serif', serif;
+    line-height: 1.4;
+}
+
+.technique-image-container {
+    flex: 1;
+    min-width: 300px;
+    height: 400px;
+    overflow: hidden;
+}
+
+.technique-main-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.technique-image-container:hover .technique-main-image {
+    transform: scale(1.05);
+}
+
+/* Информационные карточки */
+.technique-info {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+    margin-bottom: 3rem;
+}
+
+.info-card {
+    background-color: white;
+    border-radius: var(--card-border-radius);
+    padding: 1.5rem;
+    box-shadow: var(--box-shadow);
+    text-align: center;
+}
+
+.info-card h3 {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+    color: var(--primary-color);
+}
+
+.info-card p {
+    margin-bottom: 0;
+    color: #34495e;
+}
+
+.difficulty-level, .usage-level {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 0.8rem;
+}
+
+.level-dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #e0e0e0;
+    margin: 0 3px;
+}
+
+.level-dot.filled {
+    background-color: var(--secondary-color);
+}
+
+.belt {
+    height: 20px;
+    width: 80px;
+    margin: 0 auto 1rem;
+    border-radius: 3px;
+}
+
+.yellow-belt {
+    background-color: #ffd700;
+}
+
+.orange-belt {
+    background-color: #ff8c00;
+}
+
+.green-belt {
+    background-color: #4caf50;
+}
+
+.blue-belt {
+    background-color: #2196f3;
+}
+
+.brown-belt {
+    background-color: #795548;
+}
+
+.black-belt {
+    background-color: #212121;
+}
+
+/* Описание техники */
+.technique-description {
+    background-color: white;
+    border-radius: var(--card-border-radius);
+    padding: 2.5rem;
+    margin-bottom: 3rem;
+    box-shadow: var(--box-shadow);
+}
+
+.technique-description h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+    color: var(--primary-color);
+    position: relative;
+    padding-bottom: 0.8rem;
+}
+
+.technique-description h2::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 60px;
+    height: 3px;
+    background-color: var(--secondary-color);
+}
+
+.technique-description p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #34495e;
+    margin-bottom: 1.5rem;
+}
+
+.technique-description p:last-child {
+    margin-bottom: 0;
+}
+
+/* Выполнение техники */
+.technique-execution {
+    background-color: white;
+    border-radius: var(--card-border-radius);
+    padding: 2.5rem;
+    margin-bottom: 3rem;
+    box-shadow: var(--box-shadow);
+}
+
+.technique-execution h2 {
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+    color: var(--primary-color);
+    position: relative;
+    padding-bottom: 0.8rem;
+}
+
+.technique-execution h2::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 60px;
+    height: 3px;
+    background-color: var(--secondary-color);
+}
+
+.execution-steps {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.step {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.step-number {
+    width: 40px;
+    height: 40px;
+    background-color: var(--primary-color);
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    font-weight: 600;
+    flex-shrink: 0;
+}
+
+.step-content {
+    flex: 1;
+}
+
+.step-content h3 {
+    font-size: 1.3rem;
+    margin-bottom: 0.8rem;
+    color: var(--primary-color);
+}
+
+.step-content p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #34495e;
+    margin-bottom: 0;
+}
+
+/* Видео-демонстрация */
+.technique-video {
+    background-color: white;
+    border-radius: var(--card-border-radius);
+    padding: 2.5rem;
+    margin-bottom: 3rem;
+    box-shadow: var(--box-shadow);
+}
+
+.technique-video h2 {
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+    color: var(--primary-color);
+    position: relative;
+    padding-bottom: 0.8rem;
+}
+
+.technique-video h2::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 60px;
+    height: 3px;
+    background-color: var(--secondary-color);
+}
+
+.video-container {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%; /* 16:9 соотношение сторон */
+    height: 0;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+/* Вариации техники */
+.technique-variations {
+    padding: 70px 0;
+    background-color: #f9f9f9;
+}
+
+.technique-variations h2 {
+    font-size: 32px;
+    margin-bottom: 15px;
+    color: #222;
+    text-align: center;
+    position: relative;
+    padding-bottom: 15px;
+}
+
+.technique-variations h2::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 3px;
+    background-color: var(--primary-color);
+}
+
+.variations-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+    justify-items: center;
+    justify-content: center;
+}
+
+.variation-card {
+    background-color: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    max-width: 350px;
+    width: 100%;
+}
+
+.variation-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+.variation-image {
+    height: 450px;
+    overflow: hidden;
+    position: relative;
+}
+
+.variation-image::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0);
+    transition: background 0.3s ease;
+}
+
+.variation-card:hover .variation-image::after {
+    background: rgba(0, 0, 0, 0.2);
+}
+
+.variation-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.variation-card:hover .variation-image img {
+    transform: scale(1.05);
+}
+
+.variation-content {
+    padding: 25px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    border-top: 1px solid rgba(0, 0, 0, 0.05);
+    text-align: center;
+}
+
+.variation-content h3 {
+    font-size: 22px;
+    margin-bottom: 12px;
+    color: #222;
+    font-weight: 600;
+    text-align: center;
+}
+
+.variation-content p {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.6;
+    text-align: center;
+}
+
+/* Советы для эффективного выполнения */
+.technique-tips {
+    background-color: white;
+    border-radius: var(--card-border-radius);
+    padding: 2.5rem;
+    margin-bottom: 3rem;
+    box-shadow: var(--box-shadow);
+}
+
+.technique-tips h2 {
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+    color: var(--primary-color);
+    position: relative;
+    padding-bottom: 0.8rem;
+}
+
+.technique-tips h2::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 60px;
+    height: 3px;
+    background-color: var(--secondary-color);
+}
+
+.tips-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+}
+
+.tip {
+    display: flex;
+    gap: 1.5rem;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    padding: 1.5rem;
+}
+
+.tip-icon {
+    font-size: 1.8rem;
+    flex-shrink: 0;
+}
+
+.tip-content h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.8rem;
+    color: var(--primary-color);
+}
+
+.tip-content p {
+    font-size: 0.95rem;
+    line-height: 1.5;
+    color: #34495e;
+    margin-bottom: 0;
+}
+
+/* Распространенные ошибки */
+.technique-common-mistakes {
+    background-color: white;
+    border-radius: var(--card-border-radius);
+    padding: 2.5rem;
+    margin-bottom: 3rem;
+    box-shadow: var(--box-shadow);
+}
+
+.technique-common-mistakes h2 {
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+    color: var(--primary-color);
+    position: relative;
+    padding-bottom: 0.8rem;
+}
+
+.technique-common-mistakes h2::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 60px;
+    height: 3px;
+    background-color: var(--secondary-color);
+}
+
+.mistakes-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.mistake {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff8f8;
+    border-radius: 8px;
+    padding: 1.5rem;
+    border-left: 3px solid var(--secondary-color);
+}
+
+.mistake-icon {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+.mistake-content h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.8rem;
+    color: var(--primary-color);
+}
+
+.mistake-content p {
+    font-size: 0.95rem;
+    line-height: 1.5;
+    color: #34495e;
+    margin-bottom: 0;
+}
+
+
+.related-techniques h2 {
+    font-size: 32px;
+    margin-bottom: 15px;
+    color: #222;
+    text-align: center;
+    position: relative;
+    padding-bottom: 15px;
+}
+
+.related-techniques h2::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 3px;
+    background-color: var(--primary-color);
+}
+
+.related-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.related-card {
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    transition: box-shadow 0.3s ease;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.related-card:hover {
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.related-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.related-card h3 {
+    font-size: 20px;
+    margin: 20px 20px 10px;
+    color: #222;
+    font-weight: 600;
+}
+
+.related-card p {
+    font-size: 15px;
+    color: #555;
+    line-height: 1.5;
+    margin: 0 20px 15px;
+}
+
+.related-card .technique-category.small {
+    font-size: 12px;
+    padding: 4px 10px;
+    margin: 0 20px 20px;
+    display: inline-block;
+    background-color: #e74c3c;
+    color: white;
+    border-radius: 3px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+}
+
+/* Адаптивные стили */
+@media (max-width: 1200px) {
+    .technique-info {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .variations-grid,
+    .related-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 992px) {
+    .technique-header {
+        flex-direction: column;
+    }
+    
+    .technique-title {
+        padding: 2rem;
+        text-align: center;
+    }
+    
+    .technique-title h1 {
+        font-size: 2.4rem;
+    }
+    
+    .technique-image-container {
+        height: 300px;
+    }
+    
+    .tips-container {
+        grid-template-columns: 1fr;
+    }
+    
+    .mistakes-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .variations-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .related-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .variation-image {
+        height: 400px;
+    }
+    
+    .related-card::after {
+        height: 350px;
+    }
+}
+
+@media (max-width: 768px) {
+    .technique-info {
+        grid-template-columns: 1fr;
+    }
+    
+    .variations-grid,
+    .related-grid,
+    .mistakes-container {
+        grid-template-columns: 1fr;
+    }
+    
+    .step {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    
+    .step-number {
+        margin-bottom: 0.5rem;
+    }
+    
+    .variation-image {
+        height: 350px;
+    }
+    
+    .related-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .related-card::after {
+        height: 300px;
+    }
+}
+
+@media (max-width: 576px) {
+    .technique-title h1 {
+        font-size: 2rem;
+    }
+    
+    .technique-subtitle {
+        font-size: 1.1rem;
+    }
+    
+    .technique-image-container {
+        height: 250px;
+    }
+    
+    .technique-description,
+    .technique-execution,
+    .technique-video,
+    .technique-variations,
+    .technique-tips,
+    .technique-common-mistakes,
+    .related-techniques {
+        padding: 1.5rem;
+    }
+    
+    .technique-description h2,
+    .technique-execution h2,
+    .technique-video h2,
+    .technique-variations h2,
+    .technique-tips h2,
+    .technique-common-mistakes h2,
+    .related-techniques h2 {
+        font-size: 1.5rem;
+    }
+}
+
+.technique-category.small {
+    font-size: 0.75rem;
+    padding: 0.2rem 0.6rem;
+    margin-bottom: 0;
+    border-radius: 3px;
+}
+
+/* Модальное окно для просмотра изображений */
+.image-modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.8);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.image-modal.show {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 1;
+}
+
+.modal-content {
+    position: relative;
+    background-color: #fff;
+    margin: auto;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 80%;
+    max-height: 80%;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    animation: modalFadeIn 0.3s ease;
+}
+
+@keyframes modalFadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.modal-content img {
+    display: block;
+    max-width: 100%;
+    max-height: 70vh;
+    margin: 0 auto;
+}
+
+.close-modal {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    color: #333;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: color 0.2s ease;
+}
+
+.close-modal:hover {
+    color: var(--primary-color);
+}
+
+/* Стиль для кликабельных изображений */
+.variation-image {
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.variation-image:hover {
+    transform: scale(1.03);
+} 
