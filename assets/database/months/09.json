@@ -1,0 +1,53 @@
+{
+  "title": "Вересень 2025",
+  "events": [
+    {
+      "id": 63,
+      "title": "Чемпіонат світу",
+      "dateStart": "2025-09-04",
+      "dateEnd": "2025-09-10",
+      "location": "Доха, Катар",
+      "type": "international"
+    },
+    {
+      "id": 64,
+      "title": "ВТ «Кубок Слобожанщини»",
+      "dateStart": "2025-09-12",
+      "dateEnd": "2025-09-13",
+      "location": "Харків",
+      "type": "national"
+    },
+    {
+      "id": 65,
+      "title": "Кубок Європи U18",
+      "dateStart": "2025-09-13",
+      "dateEnd": "2025-09-14",
+      "location": "Київ, Україна",
+      "type": "international"
+    },
+    {
+      "id": 66,
+      "title": "Чемпіонат України U21",
+      "dateStart": "2025-09-19",
+      "dateEnd": "2025-09-21",
+      "location": "Дніпро",
+      "type": "national"
+    },
+    {
+      "id": 67,
+      "title": "GRAND SLAM",
+      "dateStart": "2025-09-26",
+      "dateEnd": "2025-09-28",
+      "location": "Ташкент, Узбекистан",
+      "type": "international"
+    },
+    {
+      "id": 68,
+      "title": "Тренувальний табір для національної збірної",
+      "dateStart": "2025-09-29",
+      "dateEnd": "2025-10-05",
+      "location": "Конча-Заспа",
+      "type": "training"
+    }
+  ]
+} 

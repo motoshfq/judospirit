@@ -1,0 +1,117 @@
+{
+  "title": "Жовтень 2025",
+  "events": [
+    {
+      "id": 68,
+      "title": "Тренувальний табір для національної збірної",
+      "dateStart": "2025-09-29",
+      "dateEnd": "2025-10-05",
+      "location": "Конча-Заспа",
+      "type": "training"
+    },
+    {
+      "id": 69,
+      "title": "ВТ «Кубок Закарпаття»",
+      "dateStart": "2025-10-03",
+      "dateEnd": "2025-10-05",
+      "location": "Ужгород",
+      "type": "national"
+    },
+    {
+      "id": 70,
+      "title": "ВТ \"Stronger Together Cup\"",
+      "dateStart": "2025-10-11",
+      "dateEnd": "2025-10-12",
+      "location": "Київ",
+      "type": "national"
+    },
+    {
+      "id": 71,
+      "title": "Кубок Європи",
+      "dateStart": "2025-10-11",
+      "dateEnd": "2025-10-12",
+      "location": "Малага, Іспанія",
+      "type": "international"
+    },
+    {
+      "id": 72,
+      "title": "GRAND SLAM",
+      "dateStart": "2025-10-17",
+      "dateEnd": "2025-10-19",
+      "location": "Абу-Дабі, ОАЕ",
+      "type": "international"
+    },
+    {
+      "id": 73,
+      "title": "Кубок Європи U18",
+      "dateStart": "2025-10-18",
+      "dateEnd": "2025-10-19",
+      "location": "Рига, Латвія",
+      "type": "international"
+    },
+    {
+      "id": 74,
+      "title": "Чемпіонат України U17",
+      "dateStart": "2025-10-15",
+      "dateEnd": "2025-10-17",
+      "location": "Київ",
+      "type": "national"
+    },
+    {
+      "id": 75,
+      "title": "ВТ «Кубок Федерації дзюдо Києва»",
+      "dateStart": "2025-10-18",
+      "dateEnd": "2025-10-19",
+      "location": "Київ",
+      "type": "national"
+    },
+    {
+      "id": 76,
+      "title": "ВТ «Патріот»",
+      "dateStart": "2025-10-24",
+      "dateEnd": "2025-10-25",
+      "location": "Дніпро",
+      "type": "national"
+    },
+    {
+      "id": 77,
+      "title": "ВТ «LVIV OPEN CUP»",
+      "dateStart": "2025-10-24",
+      "dateEnd": "2025-10-25",
+      "location": "Львів",
+      "type": "national"
+    },
+    {
+      "id": 78,
+      "title": "EUROPEAN OPEN",
+      "dateStart": "2025-10-25",
+      "dateEnd": "2025-10-26",
+      "location": "Сараєво, Боснія і Герцеговина",
+      "type": "international"
+    },
+    {
+      "id": 79,
+      "title": "Кубок Європи U18",
+      "dateStart": "2025-10-25",
+      "dateEnd": "2025-10-26",
+      "location": "Кранська Гора, Словенія",
+      "type": "international"
+    },
+    {
+      "id": 80,
+      "title": "GRAND PRIX",
+      "dateStart": "2025-10-29",
+      "dateEnd": "2025-11-02",
+      "location": "Португалія",
+      "type": "international"
+    },
+    {
+      "id": 81,
+      "title": "Чемпіонат Європи U23",
+      "dateStart": "2025-10-31",
+      "dateEnd": "2025-11-02",
+      "location": "Кишинів, Молдова",
+      "type": "international"
+    }
+  ]
+} 

@@ -1,0 +1,53 @@
+{
+  "title": "Серпень 2025",
+  "events": [
+    {
+      "id": 57,
+      "title": "Міжнародний тренувальний табір",
+      "dateStart": "2025-08-01",
+      "dateEnd": "2025-08-07",
+      "location": "Київ",
+      "type": "training"
+    },
+    {
+      "id": 58,
+      "title": "Чемпіонат світу U18",
+      "dateStart": "2025-08-06",
+      "dateEnd": "2025-08-10",
+      "location": "Ріо-де-Жанейро, Бразилія",
+      "type": "international"
+    },
+    {
+      "id": 59,
+      "title": "ВТ «Літній кубок»",
+      "dateStart": "2025-08-15",
+      "dateEnd": "2025-08-16",
+      "location": "Львів",
+      "type": "national"
+    },
+    {
+      "id": 60,
+      "title": "GRAND PRIX",
+      "dateStart": "2025-08-22",
+      "dateEnd": "2025-08-24",
+      "location": "Загреб, Хорватія",
+      "type": "international"
+    },
+    {
+      "id": 61,
+      "title": "Тренувальний табір для тренерів",
+      "dateStart": "2025-08-25",
+      "dateEnd": "2025-08-29",
+      "location": "Київ",
+      "type": "training"
+    },
+    {
+      "id": 62,
+      "title": "ВТ «Кубок незалежності»",
+      "dateStart": "2025-08-23",
+      "dateEnd": "2025-08-24",
+      "location": "Київ",
+      "type": "national"
+    }
+  ]
+} 

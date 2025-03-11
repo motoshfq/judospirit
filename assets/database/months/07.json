@@ -1,0 +1,53 @@
+{
+  "title": "Липень 2025",
+  "events": [
+    {
+      "id": 51,
+      "title": "GRAND PRIX",
+      "dateStart": "2025-07-04",
+      "dateEnd": "2025-07-06",
+      "location": "Будапешт, Угорщина",
+      "type": "international"
+    },
+    {
+      "id": 52,
+      "title": "Міжнародний тренувальний табір",
+      "dateStart": "2025-07-07",
+      "dateEnd": "2025-07-12",
+      "location": "Будапешт, Угорщина",
+      "type": "training"
+    },
+    {
+      "id": 53,
+      "title": "ВТ «Кубок Чорного моря»",
+      "dateStart": "2025-07-11",
+      "dateEnd": "2025-07-12",
+      "location": "Одеса",
+      "type": "national"
+    },
+    {
+      "id": 54,
+      "title": "Чемпіонат Європи U21",
+      "dateStart": "2025-07-17",
+      "dateEnd": "2025-07-20",
+      "location": "Софія, Болгарія",
+      "type": "international"
+    },
+    {
+      "id": 55,
+      "title": "Літній тренувальний табір для юніорів",
+      "dateStart": "2025-07-21",
+      "dateEnd": "2025-07-27",
+      "location": "Буковель",
+      "type": "training"
+    },
+    {
+      "id": 56,
+      "title": "GRAND SLAM",
+      "dateStart": "2025-07-25",
+      "dateEnd": "2025-07-27",
+      "location": "Париж, Франція",
+      "type": "international"
+    }
+  ]
+} 

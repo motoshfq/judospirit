@@ -1,0 +1,69 @@
+{
+  "title": "Червень 2025",
+  "events": [
+    {
+      "id": 43,
+      "title": "GRAND PRIX",
+      "dateStart": "2025-05-30",
+      "dateEnd": "2025-06-01",
+      "location": "Тбілісі, Грузія",
+      "type": "international"
+    },
+    {
+      "id": 44,
+      "title": "Чемпіонат Європи U18",
+      "dateStart": "2025-06-05",
+      "dateEnd": "2025-06-08",
+      "location": "Таллінн, Естонія",
+      "type": "international"
+    },
+    {
+      "id": 45,
+      "title": "ВТ «Кубок Карпат»",
+      "dateStart": "2025-06-07",
+      "dateEnd": "2025-06-08",
+      "location": "Івано-Франківськ",
+      "type": "national"
+    },
+    {
+      "id": 46,
+      "title": "GRAND SLAM",
+      "dateStart": "2025-06-13",
+      "dateEnd": "2025-06-15",
+      "location": "Токіо, Японія",
+      "type": "international"
+    },
+    {
+      "id": 47,
+      "title": "Кубок України",
+      "dateStart": "2025-06-20",
+      "dateEnd": "2025-06-22",
+      "location": "Київ",
+      "type": "national"
+    },
+    {
+      "id": 48,
+      "title": "Кубок Європи U18",
+      "dateStart": "2025-06-21",
+      "dateEnd": "2025-06-22",
+      "location": "Загреб, Хорватія",
+      "type": "international"
+    },
+    {
+      "id": 49,
+      "title": "ВТ «Літні старти»",
+      "dateStart": "2025-06-27",
+      "dateEnd": "2025-06-28",
+      "location": "Харків",
+      "type": "national"
+    },
+    {
+      "id": 50,
+      "title": "EUROPEAN OPEN",
+      "dateStart": "2025-06-28",
+      "dateEnd": "2025-06-29",
+      "location": "Прага, Чехія",
+      "type": "international"
+    }
+  ]
+} 

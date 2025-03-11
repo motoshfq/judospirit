@@ -1,0 +1,101 @@
+{
+  "title": "Квітень 2025",
+  "events": [
+    {
+      "id": 25,
+      "title": "Кубок Європи",
+      "dateStart": "2025-04-05",
+      "dateEnd": "2025-04-06",
+      "location": "Дубровник, Хорватія",
+      "type": "international"
+    },
+    {
+      "id": 26,
+      "title": "Кубок Європи U18",
+      "dateStart": "2025-04-05",
+      "dateEnd": "2025-04-06",
+      "location": "Тепліце, Чехія",
+      "type": "international"
+    },
+    {
+      "id": 27,
+      "title": "Кубок Європи U21",
+      "dateStart": "2025-04-05",
+      "dateEnd": "2025-04-06",
+      "location": "Познань, Польща",
+      "type": "international"
+    },
+    {
+      "id": 28,
+      "title": "ВТ «ХХХIV Меморіал Івана Прищепи» серед юнаків та дівчат 2009-2011 р.н.",
+      "dateStart": "2025-04-05",
+      "dateEnd": "2025-04-06",
+      "location": "Дніпро",
+      "type": "national"
+    },
+    {
+      "id": 29,
+      "title": "Міжнародний тренувальний табір",
+      "dateStart": "2025-04-07",
+      "dateEnd": "2025-04-12",
+      "location": "Тата, Угорщина",
+      "type": "training"
+    },
+    {
+      "id": 30,
+      "title": "НТЗ збірної команди до чемпіонату Європи",
+      "dateStart": "2025-04-10",
+      "dateEnd": "2025-04-20",
+      "location": "Україна",
+      "type": "training"
+    },
+    {
+      "id": 31,
+      "title": "ВТ «Randori Spring Cup-2024» серед юнаків та дівчат 2009-2011 р.н.",
+      "dateStart": "2025-04-18",
+      "dateEnd": "2025-04-20",
+      "location": "Ужгород",
+      "type": "national"
+    },
+    {
+      "id": 32,
+      "title": "Чемпіонат Європи",
+      "dateStart": "2025-04-24",
+      "dateEnd": "2025-04-27",
+      "location": "Подгориця, Чорногорія",
+      "type": "international"
+    },
+    {
+      "id": 33,
+      "title": "ВТ «Кубок Луцьку»",
+      "dateStart": "2025-04-25",
+      "dateEnd": "2025-04-26",
+      "location": "Луцьк",
+      "type": "national"
+    },
+    {
+      "id": 34,
+      "title": "Всеукраїнське змагання \"Дитяча ліга\" (фінал)",
+      "dateStart": "2025-04-25",
+      "dateEnd": "2025-04-26",
+      "location": "Дніпро",
+      "type": "national"
+    },
+    {
+      "id": 35,
+      "title": "Кубок Європи U18",
+      "dateStart": "2025-04-26",
+      "dateEnd": "2025-04-27",
+      "location": "Берлін, Німеччина",
+      "type": "international"
+    },
+    {
+      "id": 36,
+      "title": "Чемпіонат України U16 (2010-2011 р.н.)",
+      "dateStart": "2025-04-30",
+      "dateEnd": "2025-05-02",
+      "location": "Київ",
+      "type": "national"
+    }
+  ]
+} 

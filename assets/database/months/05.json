@@ -1,0 +1,69 @@
+{
+  "title": "Травень 2025",
+  "events": [
+    {
+      "id": 36,
+      "title": "Чемпіонат України U16 (2010-2011 р.н.)",
+      "dateStart": "2025-04-30",
+      "dateEnd": "2025-05-02",
+      "location": "Київ",
+      "type": "national"
+    },
+    {
+      "id": 37,
+      "title": "GRAND SLAM",
+      "dateStart": "2025-05-09",
+      "dateEnd": "2025-05-11",
+      "location": "Баку, Азербайджан",
+      "type": "international"
+    },
+    {
+      "id": 38,
+      "title": "Кубок Європи U18",
+      "dateStart": "2025-05-10",
+      "dateEnd": "2025-05-11",
+      "location": "Берлін, Німеччина",
+      "type": "international"
+    },
+    {
+      "id": 39,
+      "title": "ВТ «Кубок Перемоги»",
+      "dateStart": "2025-05-08",
+      "dateEnd": "2025-05-09",
+      "location": "Одеса",
+      "type": "national"
+    },
+    {
+      "id": 40,
+      "title": "Чемпіонат України серед ветеранів",
+      "dateStart": "2025-05-16",
+      "dateEnd": "2025-05-17",
+      "location": "Львів",
+      "type": "national"
+    },
+    {
+      "id": 41,
+      "title": "EUROPEAN OPEN",
+      "dateStart": "2025-05-17",
+      "dateEnd": "2025-05-18",
+      "location": "Мадрид, Іспанія",
+      "type": "international"
+    },
+    {
+      "id": 42,
+      "title": "ВТ «Кубок Дніпра»",
+      "dateStart": "2025-05-23",
+      "dateEnd": "2025-05-24",
+      "location": "Дніпро",
+      "type": "national"
+    },
+    {
+      "id": 43,
+      "title": "GRAND PRIX",
+      "dateStart": "2025-05-30",
+      "dateEnd": "2025-06-01",
+      "location": "Тбілісі, Грузія",
+      "type": "international"
+    }
+  ]
+} 

@@ -1,0 +1,77 @@
+{
+  "title": "Листопад 2025",
+  "events": [
+    {
+      "id": 80,
+      "title": "GRAND PRIX",
+      "dateStart": "2025-10-29",
+      "dateEnd": "2025-11-02",
+      "location": "Португалія",
+      "type": "international"
+    },
+    {
+      "id": 81,
+      "title": "Чемпіонат Європи U23",
+      "dateStart": "2025-10-31",
+      "dateEnd": "2025-11-02",
+      "location": "Кишинів, Молдова",
+      "type": "international"
+    },
+    {
+      "id": 82,
+      "title": "EUROPEAN OPEN",
+      "dateStart": "2025-11-08",
+      "dateEnd": "2025-11-09",
+      "location": "Рим, Італія",
+      "type": "international"
+    },
+    {
+      "id": 83,
+      "title": "Кубок Європи U18",
+      "dateStart": "2025-11-08",
+      "dateEnd": "2025-11-09",
+      "location": "Дьйор, Угорщина",
+      "type": "international"
+    },
+    {
+      "id": 84,
+      "title": "ВТ, присвячений пам'яті волинських майстрів дзюдо",
+      "dateStart": "2025-11-15",
+      "dateEnd": "2025-11-16",
+      "location": "Луцьк",
+      "type": "national"
+    },
+    {
+      "id": 85,
+      "title": "GRAND PRIX",
+      "dateStart": "2025-11-14",
+      "dateEnd": "2025-11-16",
+      "location": "Загреб, Хорватія",
+      "type": "international"
+    },
+    {
+      "id": 86,
+      "title": "ВТ «Українка» для дівчат 2010-2015 р.н.",
+      "dateStart": "2025-11-21",
+      "dateEnd": "2025-11-22",
+      "location": "Дніпро",
+      "type": "national"
+    },
+    {
+      "id": 87,
+      "title": "Чемпіонат України U15 (2009-2011 р.н.)",
+      "dateStart": "2025-11-25",
+      "dateEnd": "2025-11-27",
+      "location": "Київ",
+      "type": "national"
+    },
+    {
+      "id": 88,
+      "title": "Міжнародний тренувальний табір",
+      "dateStart": "2025-11-28",
+      "dateEnd": "2025-12-04",
+      "location": "Київ",
+      "type": "training"
+    }
+  ]
+} 

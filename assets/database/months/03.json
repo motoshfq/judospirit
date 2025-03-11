@@ -1,0 +1,85 @@
+{
+  "title": "Березень 2025",
+  "events": [
+    {
+      "id": 15,
+      "title": "ВТ «Київська весна», юнакі та дівчата 2010-2011 р.н.",
+      "dateStart": "2025-03-01",
+      "dateEnd": "2025-03-01",
+      "location": "Київ",
+      "type": "national"
+    },
+    {
+      "id": 16,
+      "title": "Чемпіонат України U21 (2005-10 р.н.)",
+      "dateStart": "2025-03-04",
+      "dateEnd": "2025-03-06",
+      "location": "Ужгород",
+      "type": "national"
+    },
+    {
+      "id": 17,
+      "title": "GRAND PRIX",
+      "dateStart": "2025-03-07",
+      "dateEnd": "2025-03-09",
+      "location": "Лінц, Австрія",
+      "type": "international"
+    },
+    {
+      "id": 18,
+      "title": "Міжнародний тренувальний табір",
+      "dateStart": "2025-03-10",
+      "dateEnd": "2025-03-17",
+      "location": "Німбурк, Чехія",
+      "type": "training"
+    },
+    {
+      "id": 19,
+      "title": "Кубок Європи",
+      "dateStart": "2025-03-15",
+      "dateEnd": "2025-03-16",
+      "location": "Рига, Латвія",
+      "type": "international"
+    },
+    {
+      "id": 20,
+      "title": "Кубок Європи U18",
+      "dateStart": "2025-03-15",
+      "dateEnd": "2025-03-16",
+      "location": "Загреб, Хорватія",
+      "type": "international"
+    },
+    {
+      "id": 21,
+      "title": "GRAND SLAM",
+      "dateStart": "2025-03-21",
+      "dateEnd": "2025-03-23",
+      "location": "Тбілісі, Грузія",
+      "type": "international"
+    },
+    {
+      "id": 22,
+      "title": "НТЗ збірної команди (юніорки, дівчата 2005-2010 р.н.)",
+      "dateStart": "2025-03-21",
+      "dateEnd": "2025-03-23",
+      "location": "Київ, ОФК ім. І. Піддубного",
+      "type": "training"
+    },
+    {
+      "id": 23,
+      "title": "ВТ \"Kremen Cup\", юнаки та дівчата U15 (2011-2012 р.н.), U13 (2013-2014 р.н.), U11 (2015-2016 р.н.)",
+      "dateStart": "2025-03-28",
+      "dateEnd": "2025-03-30",
+      "location": "Кременчук",
+      "type": "national"
+    },
+    {
+      "id": 24,
+      "title": "ХХ літня Універсіада України",
+      "dateStart": "2025-03-29",
+      "dateEnd": "2025-03-31",
+      "location": "Хмельницький",
+      "type": "national"
+    }
+  ]
+} 

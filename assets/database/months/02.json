@@ -1,0 +1,77 @@
+{
+  "title": "Лютий 2025",
+  "events": [
+    {
+      "id": 6,
+      "title": "GRAND SLAM",
+      "dateStart": "2025-02-01",
+      "dateEnd": "2025-02-02",
+      "location": "Париж, Франція",
+      "type": "international"
+    },
+    {
+      "id": 7,
+      "title": "НТЗ збірної команди (юніорки, дівчата 2005-2010 р.н.)",
+      "dateStart": "2025-02-03",
+      "dateEnd": "2025-02-05",
+      "location": "Київ, ОФК ім. І. Піддубного",
+      "type": "training"
+    },
+    {
+      "id": 8,
+      "title": "EUROPEAN OPEN",
+      "dateStart": "2025-02-10",
+      "dateEnd": "2025-02-11",
+      "location": "Любляна, Словаччина",
+      "type": "international"
+    },
+    {
+      "id": 9,
+      "title": "Всеукраїнський Ката семінар",
+      "dateStart": "2025-02-11",
+      "dateEnd": "2025-02-14",
+      "location": "Ужгород",
+      "type": "national"
+    },
+    {
+      "id": 10,
+      "title": "GRAND SLAM",
+      "dateStart": "2025-02-14",
+      "dateEnd": "2025-02-16",
+      "location": "Азербайджан, Баку",
+      "type": "international"
+    },
+    {
+      "id": 11,
+      "title": "Кубок Європи U18",
+      "dateStart": "2025-02-15",
+      "dateEnd": "2025-02-16",
+      "location": "Шаморін, Словаччина",
+      "type": "international"
+    },
+    {
+      "id": 12,
+      "title": "Чемпіонат України U18 (2008-2010 р.н.)",
+      "dateStart": "2025-02-19",
+      "dateEnd": "2025-02-21",
+      "location": "Черкаси",
+      "type": "national"
+    },
+    {
+      "id": 13,
+      "title": "EUROPEAN OPEN",
+      "dateStart": "2025-02-22",
+      "dateEnd": "2025-02-23",
+      "location": "Варшава, Польща",
+      "type": "international"
+    },
+    {
+      "id": 14,
+      "title": "GRAND SLAM",
+      "dateStart": "2025-02-28",
+      "dateEnd": "2025-03-02",
+      "location": "Ташкент, Узбекистан",
+      "type": "international"
+    }
+  ]
+} 

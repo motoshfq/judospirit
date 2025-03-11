@@ -1,0 +1,69 @@
+{
+  "title": "Грудень 2025",
+  "events": [
+    {
+      "id": 88,
+      "title": "Міжнародний тренувальний табір",
+      "dateStart": "2025-11-28",
+      "dateEnd": "2025-12-04",
+      "location": "Київ",
+      "type": "training"
+    },
+    {
+      "id": 89,
+      "title": "MASTERS",
+      "dateStart": "2025-12-05",
+      "dateEnd": "2025-12-07",
+      "location": "Єрусалим, Ізраїль",
+      "type": "international"
+    },
+    {
+      "id": 90,
+      "title": "ВТ «Зимовий кубок»",
+      "dateStart": "2025-12-06",
+      "dateEnd": "2025-12-07",
+      "location": "Харків",
+      "type": "national"
+    },
+    {
+      "id": 91,
+      "title": "Чемпіонат України серед клубів",
+      "dateStart": "2025-12-12",
+      "dateEnd": "2025-12-14",
+      "location": "Київ",
+      "type": "national"
+    },
+    {
+      "id": 92,
+      "title": "Кубок Європи U18",
+      "dateStart": "2025-12-13",
+      "dateEnd": "2025-12-14",
+      "location": "Київ, Україна",
+      "type": "international"
+    },
+    {
+      "id": 93,
+      "title": "ВТ «Новорічний турнір»",
+      "dateStart": "2025-12-19",
+      "dateEnd": "2025-12-20",
+      "location": "Львів",
+      "type": "national"
+    },
+    {
+      "id": 94,
+      "title": "ВТ «Різдвяний кубок»",
+      "dateStart": "2025-12-26",
+      "dateEnd": "2025-12-27",
+      "location": "Одеса",
+      "type": "national"
+    },
+    {
+      "id": 95,
+      "title": "Зимовий тренувальний табір для дітей",
+      "dateStart": "2025-12-26",
+      "dateEnd": "2025-12-30",
+      "location": "Буковель",
+      "type": "training"
+    }
+  ]
+} 

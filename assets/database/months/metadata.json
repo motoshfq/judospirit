@@ -1,0 +1,71 @@
+{
+  "title": "КАЛЕНДАР СПОРТИВНИХ ЗАХОДІВ НА 2025 рік",
+  "months": [
+    {
+      "id": "01",
+      "name": "Січень",
+      "eventsCount": 5
+    },
+    {
+      "id": "02",
+      "name": "Лютий",
+      "eventsCount": 9
+    },
+    {
+      "id": "03",
+      "name": "Березень",
+      "eventsCount": 10
+    },
+    {
+      "id": "04",
+      "name": "Квітень",
+      "eventsCount": 12
+    },
+    {
+      "id": "05",
+      "name": "Травень",
+      "eventsCount": 16
+    },
+    {
+      "id": "06",
+      "name": "Червень",
+      "eventsCount": 6
+    },
+    {
+      "id": "07",
+      "name": "Липень",
+      "eventsCount": 5
+    },
+    {
+      "id": "08",
+      "name": "Серпень",
+      "eventsCount": 3
+    },
+    {
+      "id": "09",
+      "name": "Вересень",
+      "eventsCount": 7
+    },
+    {
+      "id": "10",
+      "name": "Жовтень",
+      "eventsCount": 14
+    },
+    {
+      "id": "11",
+      "name": "Листопад",
+      "eventsCount": 6
+    },
+    {
+      "id": "12",
+      "name": "Грудень",
+      "eventsCount": 9
+    }
+  ],
+  "totalEvents": 102,
+  "eventTypes": {
+    "international": "Міжнародний",
+    "national": "Національний",
+    "training": "Тренувальний"
+  }
+} 
