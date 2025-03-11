@@ -1,1 +1,651 @@
+/* Стилі для сторінки календаря */
 
+/* Стилі для заголовка сторінки */
+.page-hero {
+    background: linear-gradient(135deg, rgba(44, 62, 80, 0.85) 0%, rgba(26, 37, 47, 0.90) 100%), url('../../../assets/images/judo-hero-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 3rem;
+    border-radius: var(--card-border-radius);
+    margin-bottom: 3rem;
+    position: relative;
+    overflow: hidden;
+    box-shadow: var(--box-shadow);
+}
+
+
+.page-hero-content {
+    max-width: 800px;
+    position: relative;
+    z-index: 1;
+}
+
+.page-hero h1 {
+    color: white;
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    position: relative;
+    display: inline-block;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.page-hero h1::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 80px;
+    height: 4px;
+    background-color: var(--secondary-color);
+    border-radius: 2px;
+}
+
+.page-hero p {
+    color: var(--light-color);
+    font-size: 1.2rem;
+    max-width: 600px;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+/* Стилі для контейнера календаря */
+.calendar-container {
+    margin-bottom: 3rem;
+    min-height: 400px; /* Мінімальна висота для уникнення стрибків контенту */
+}
+
+/* Стилі для фільтрів */
+.calendar-filters {
+    background-color: white;
+    border-radius: var(--card-border-radius);
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+    box-shadow: var(--box-shadow);
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+/* Стилі для типів подій */
+.event-type-selector {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.8rem;
+}
+
+.type-btn {
+    padding: 0.6rem 1.2rem;
+    background-color: var(--light-color);
+    border: none;
+    border-radius: var(--border-radius);
+    font-size: 0.95rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.type-btn:hover, .type-btn.active {
+    background-color: var(--accent-color);
+    color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.month-block {
+    margin-bottom: 3rem; /* Збільшений відступ між місяцями */
+    animation: fadeIn 0.5s ease-in-out;
+    background-color: white;
+    border-radius: var(--card-border-radius);
+    padding: 2rem;
+    box-shadow: var(--box-shadow);
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.month-title {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: var(--primary-color);
+    position: relative;
+    padding-left: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.month-title::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0.5rem;
+    width: 8px;
+    height: 80%;
+    background-color: var(--secondary-color);
+    border-radius: 4px;
+}
+
+.month-year {
+    font-weight: 700;
+}
+
+.month-name {
+    margin-right: 0.5rem;
+}
+
+.year {
+    color: var(--gray-color);
+}
+
+.month-navigation {
+    display: flex;
+    gap: 1rem;
+    z-index: 10; /* Забезпечує, що кнопки будуть поверх інших елементів */
+    position: relative; /* Додано для забезпечення правильного z-index */
+}
+
+.month-nav-btn {
+    background-color: var(--light-color);
+    border: none;
+    border-radius: 50%;
+    width: 44px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 1.2rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: relative; /* Додано для забезпечення правильного z-index */
+    text-decoration: none; /* Прибираємо підкреслення для посилань */
+    color: inherit; /* Зберігаємо колір тексту */
+}
+
+.month-nav-btn:hover {
+    background-color: var(--secondary-color);
+    color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    transform: translateY(-2px);
+}
+
+.month-nav-btn.disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+    box-shadow: none;
+    transform: none;
+    pointer-events: none; /* Вимикаємо події для неактивних кнопок */
+}
+
+/* Додаємо псевдоелемент для збільшення області кліку */
+.month-nav-btn::after {
+    content: '';
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    right: -10px;
+    bottom: -10px;
+    z-index: -1;
+}
+
+.events-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.event-item {
+    display: flex;
+    background-color: white;
+    border-radius: var(--card-border-radius);
+    overflow: hidden;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+    position: relative;
+    border-left: 5px solid var(--light-color);
+}
+
+.event-item[data-type="international"] {
+    border-left-color: #3498db;
+}
+
+.event-item[data-type="national"] {
+    border-left-color: #2ecc71;
+}
+
+.event-item[data-type="training"] {
+    border-left-color: #e74c3c;
+}
+
+.event-item:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.event-item:hover .event-svg {
+    transform: scale(1.05);
+}
+
+.event-item[data-type="international"]:hover .event-svg {
+    background-color: rgba(52, 152, 219, 0.1);
+}
+
+.event-item[data-type="national"]:hover .event-svg {
+    background-color: rgba(46, 204, 113, 0.1);
+}
+
+.event-item[data-type="training"]:hover .event-svg {
+    background-color: rgba(231, 76, 60, 0.1);
+}
+
+.event-svg {
+    width: 100px;
+    min-width: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5rem 1rem;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.event-item[data-type="international"] .event-svg {
+    background-color: rgba(52, 152, 219, 0.05);
+}
+
+.event-item[data-type="national"] .event-svg {
+    background-color: rgba(46, 204, 113, 0.05);
+}
+
+.event-item[data-type="training"] .event-svg {
+    background-color: rgba(231, 76, 60, 0.05);
+}
+
+.event-svg::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 60px;
+    opacity: 1;
+    z-index: 0;
+}
+
+/* Применяем SVG иконки в зависимости от типа события */
+.event-item[data-type="international"] .event-svg::before {
+    background-image: url('../../../assets/images/SVG/event-icon-international.svg');
+}
+
+.event-item[data-type="national"] .event-svg::before {
+    background-image: url('../../../assets/images/SVG/event-icon-national.svg');
+}
+
+.event-item[data-type="training"] .event-svg::before {
+    background-image: url('../../../assets/images/SVG/event-icon-training.svg');
+}
+
+/* Стили для тегов */
+.tags-container {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: flex;
+    gap: 8px;
+    z-index: 2;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.date-tag {
+    background-color: var(--primary-color);
+    color: white;
+    font-size: 0.8rem;
+    font-weight: 600;
+    padding: 0.4rem 0.6rem;
+    border-radius: 4px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+}
+
+.date-tag .day {
+    font-size: 1rem;
+    font-weight: 700;
+    margin-right: 4px;
+}
+
+.date-tag .month {
+    text-transform: lowercase;
+    margin-right: 4px;
+}
+
+.date-tag .year {
+    opacity: 0.8;
+}
+
+.event-type {
+    display: inline-flex;
+    padding: 0.4rem 0.6rem;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    white-space: nowrap;
+}
+
+.event-type.international {
+    background-color: #3498db;
+    color: white;
+}
+
+.event-type.national {
+    background-color: #2ecc71;
+    color: white;
+}
+
+.event-type.training {
+    background-color: #e74c3c;
+    color: white;
+}
+
+/* Стилі для секції завантаження календаря */
+.calendar-download {
+    background-color: var(--light-color);
+    border-radius: var(--card-border-radius);
+    padding: 2rem;
+    margin-bottom: 3rem;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.calendar-download::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 150px;
+    height: 150px;
+    background-image: url('../../../assets/images/calendar-icon.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    opacity: 0.05;
+}
+
+.calendar-download h3 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    color: var(--primary-color);
+    position: relative;
+    z-index: 1;
+}
+
+.calendar-download p {
+    color: var(--gray-color);
+    margin-bottom: 1.5rem;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    z-index: 1;
+}
+
+.calendar-download .btn-primary {
+    position: relative;
+    z-index: 1;
+    transition: all 0.3s ease;
+}
+
+.calendar-download .btn-primary:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 15px rgba(26, 115, 232, 0.3);
+}
+
+/* Стилі для індикатора завантаження */
+.calendar-loading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 3rem;
+    background-color: white;
+    border-radius: var(--card-border-radius);
+    box-shadow: var(--box-shadow);
+}
+
+.spinner {
+    width: 50px;
+    height: 50px;
+    border: 5px solid var(--light-color);
+    border-top: 5px solid var(--primary-color);
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    margin-bottom: 1rem;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.calendar-loading p {
+    color: var(--gray-color);
+    font-size: 1.1rem;
+}
+
+/* Стилі для повідомлення про відсутність подій */
+.no-events {
+    padding: 2rem;
+    text-align: center;
+    color: var(--gray-color);
+    font-style: italic;
+    background-color: white;
+    border-radius: var(--card-border-radius);
+    box-shadow: var(--box-shadow);
+}
+
+.no-events::before {
+    content: '📅';
+    display: block;
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+/* Медіа-запити для адаптивності */
+@media (max-width: 992px) {
+    .page-hero h1 {
+        font-size: 2.5rem;
+    }
+    
+    .month-selector, .event-type-selector {
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 768px) {
+    .page-hero {
+        padding: 2rem;
+    }
+    
+    .page-hero h1 {
+        font-size: 2rem;
+    }
+    
+    .event-item {
+        flex-direction: column;
+        border-left: none;
+        border-top: 5px solid var(--light-color);
+    }
+    
+    .event-item[data-type="international"] {
+        border-left: none;
+        border-top: 5px solid #3498db;
+    }
+    
+    .event-item[data-type="national"] {
+        border-left: none;
+        border-top: 5px solid #2ecc71;
+    }
+    
+    .event-item[data-type="training"] {
+        border-left: none;
+        border-top: 5px solid #e74c3c;
+    }
+    
+    .event-svg {
+        width: 100%;
+        padding: 1rem;
+        flex-direction: row;
+        justify-content: center;
+        background-size: 50px;
+    }
+    
+    .event-svg::before {
+        background-size: 50px;
+    }
+    
+    .tags-container {
+        top: 10px;
+        right: 10px;
+    }
+    
+    .month-title {
+        font-size: 1.8rem;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .month-navigation {
+        margin-top: 1rem;
+        align-self: flex-end;
+    }
+    
+    .calendar-filters {
+        padding: 1rem;
+    }
+    
+    .event-title {
+        margin-top: 3rem; /* Отступ сверху для заголовка, чтобы не перекрывался тегами */
+    }
+}
+
+@media (max-width: 576px) {
+    .month-btn, .type-btn {
+        font-size: 0.85rem;
+        padding: 0.5rem 0.8rem;
+    }
+    
+    .month-title {
+        font-size: 1.5rem;
+    }
+    
+    .event-title {
+        font-size: 1.1rem;
+        padding-bottom: 0.4rem;
+    }
+    
+    .event-title::after {
+        width: 30px;
+        height: 2px;
+    }
+    
+    .event-item:hover .event-title::after {
+        width: 50px;
+    }
+    
+    .month-block {
+        padding: 1.5rem;
+    }
+    
+    .event-details {
+        padding: 1rem;
+    }
+    
+    .month-nav-btn {
+        width: 36px;
+        height: 36px;
+    }
+    
+    .tags-container {
+        flex-direction: column;
+        gap: 5px;
+        top: 10px;
+        right: 10px;
+    }
+    
+    .date-tag, .event-type {
+        font-size: 0.7rem;
+        padding: 0.3rem 0.5rem;
+    }
+    
+    .date-tag .day {
+        font-size: 0.8rem;
+    }
+}
+
+.event-details {
+    flex: 1;
+    padding: 1.5rem;
+    position: relative;
+}
+
+.event-title {
+    font-size: 1.3rem;
+    margin-bottom: 0.8rem;
+    color: var(--primary-color);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    letter-spacing: -0.02em;
+    line-height: 1.3;
+    position: relative;
+    padding-bottom: 0.5rem;
+}
+
+.event-title::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 40px;
+    height: 3px;
+    background-color: var(--secondary-color);
+    border-radius: 2px;
+    transition: width 0.3s ease;
+}
+
+.event-item:hover .event-title::after {
+    width: 60px;
+}
+
+.event-location {
+    color: var(--gray-color);
+    margin-bottom: 0.8rem;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+.event-location::before {
+    content: '';
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    margin-right: 0.5rem;
+    background-image: url('../../../assets/images/SVG/location-icon.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.event-item:hover .tags-container {
+    opacity: 0;
+    transform: translateY(-10px);
+} 
